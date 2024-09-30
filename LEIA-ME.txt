@@ -1,0 +1,26 @@
+Este projeto foi realizado com o foco na aplicação de padrões de projetos e arquitetura.
+
+Arquitetura:
+  A escolhida para o mesmo foi MVC por prover a separação entre as camadas e facilitar o desacoplamento.
+
+Padrões de projeto:
+  Dos padrões utilizados, tivemos a Factory para criar as instancias e o Singleton para não duplicar as
+  mesmas.
+
+SOLID:
+  Foi utilizado os princípios S(responsabilidade única), O(Aberto/Fechado), S(Segregação de interface) e 
+  I(Inversão de dependência) que foi amplamente utilizado para reduzir o acoplamento.
+
+SQL:
+  Não foi necessário utilizar procedures e triggers de banco, pois tudo foi tratado na aplicação.
+  Optei por usar Querys para inserir, editar e deletar os registros devido a solicitação na documentação do
+  projeto, pois caso contrario, utilizaria o método do TFDQuery(insert, edit, post e cancel).
+
+Pontos Extras:
+  A tela de pesquisa dos produtos/clientes é uma tela genérica criada em Runtime e utilizando injeção de 
+  dependência.
+
+
+OBS: O exe da aplicação se encontra no caminho bin/win32/release.
+     O  DUMP se encontra em Assets/DB
+   

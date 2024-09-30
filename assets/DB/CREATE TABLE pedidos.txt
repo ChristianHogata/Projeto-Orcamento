@@ -1,0 +1,10 @@
+CREATE TABLE pedidos (
+    codigo INT AUTO_INCREMENT PRIMARY KEY,
+    valor_total FLOAT,
+    valor_pago FLOAT,
+    valor_troco FLOAT,
+    id_cliente INT,
+    data_pedido TIMESTAMP,
+    FOREIGN KEY (id_cliente) REFERENCES clientes(codigo),
+    INDEX(id_cliente)
+);

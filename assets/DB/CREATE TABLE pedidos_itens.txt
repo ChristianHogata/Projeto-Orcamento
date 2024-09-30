@@ -1,0 +1,11 @@
+CREATE TABLE pedidos_itens (
+    codigo INT AUTO_INCREMENT PRIMARY KEY,
+    id_produto INT,
+    id_pedido INT,
+    quantidade FLOAT,
+    valor_total_item FLOAT,
+    FOREIGN KEY (id_produto) REFERENCES produtos(codigo),
+    FOREIGN KEY (id_pedido) REFERENCES pedidos(codigo) ON DELETE CASCADE,
+    INDEX (id_produto),
+    INDEX (id_pedido)
+);

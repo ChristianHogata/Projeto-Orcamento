@@ -1,0 +1,6 @@
+CREATE TABLE produtos (
+    codigo INT AUTO_INCREMENT PRIMARY KEY,
+    descricao VARCHAR(255),
+    preco_venda FLOAT,
+    INDEX(descricao)
+);
